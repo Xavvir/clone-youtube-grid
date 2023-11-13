@@ -27,20 +27,51 @@ header {
     cursor: pointer;
 }
 
-aside{
+aside {
     width: 218px;
     height: 968px;
-
+    padding-top: 15px;
 }
 
-.sidebar{
-    padding-left: 25px;
-
+main{
+    display: flex;
+    flex-direction: row;
 }
 
-.container{
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 17px;
+    padding-top: 20px;
+}
+
+aside .container span{
+    width: auto;
+    height: 24px;
+    gap:10px;
+}
+
+.container {
     display: grid;
     grid-template-columns: 1fr;
+}
 
-    
+.container1{
+    display: grid;
+    width: auto;
+    background-color: #fafafae7;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 45px;
+    gap: 15px;
+}
+
+.videos{
+    width: 300px;    
+}
+
+.videos span picture{
+    display: flex;
+    justify-content: center;
 }
